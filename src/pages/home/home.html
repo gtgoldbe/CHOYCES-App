@@ -1,0 +1,244 @@
+<ion-header (swipe)="swipeEvent($event)">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <!--<button ion-button small icon-end>
+      <ion-icon name="home"></ion-icon>
+      Home Icon
+    </button>-->
+
+    <ion-buttons end>
+        
+        <button ion-button (click)="goHome()">
+          <ion-icon large name="home"></ion-icon>
+        </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+<ion-content  padding  class="pane">
+  <div class="center">
+
+  <h3>
+    <img src="../../assets/imgs/transparentLogoWithSubhead.webp">
+  </h3>
+ 
+    <hr>
+
+  <h3>
+    CHOYCES Summer Dance Academy Final Performance
+  </h3>
+
+  <p>
+    <!--<object height="350" width="425">
+<param name="movie" value="https://www.youtube.com/v/R3ymHMgFAps">
+<param name="wmode" value="transparent">
+<embed height="350" src="https://www.youtube.com/v/R3ymHMgFAps?rel=0" type="application/x-shockwave-flash" width="425" wmode="transparent">
+</object>-->
+<iframe width="315" height="315" src="https://www.youtube.com/embed/wGL4LkB0Igw" 
+frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+picture-in-picture" allowfullscreen></iframe>
+  </p>
+
+  <h3>
+    Educational Consulting
+  </h3>
+
+  <p>
+    CHOYCES offers education consultations to provide students with advice regarding 
+    their academics and guide them to their fullest potential.
+  </p>
+  <button ion-button small color="primary" (click)="goToConsulting()">Learn More</button>
+
+
+<h3>
+  Tutoring Services
+</h3>
+<p>
+  CHOYCES offers online tutoring services for students in grade K-12  to help enrich 
+  student’s education outside of school.
+</p>
+  <p>
+    <button ion-button small color="primary" (click)="goToTutoring()">Learn More</button>
+  </p>
+
+  <a href="https://choyces.org/sponsor/"><button ion-button small color="gold">Donate 
+    / Sponsor</button></a>
+
+
+  <h3>
+    In The News
+  </h3>
+  <hr>
+
+  <ion-card>
+    <ion-card-header>
+      Benefits of Tutoring
+    </ion-card-header>
+    <ion-card-content>
+      “The more academic support students receive, the more likely they are to pass 
+      their courses and stay enrolled.”
+
+    <ion-row>
+      <a href="https://www.valleycollege.edu/about-sbvc/offices/office-research-planning/
+      reports/tutoring-performance-measures-final-revisions-review.pdf"> Read More
+      </a>
+    </ion-row>
+    </ion-card-content>
+
+    <hr>
+
+    <ion-card-content>
+      “Tutoring gives students individualized attention that they don’t get in a crowded 
+      classroom. This helps children who struggle to keep up, as well as those who aren’t 
+      challenged enough.”
+
+    <ion-row>
+      <a href="https://www.oxfordlearning.com/benefits-of-tutoring/"> Read More
+      </a>
+    </ion-row>
+  </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Synchronous vs Asrynchronous Learning
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-row>
+        <a href="https://tophat.com/blog/remote-teaching-when-and-how-to-use-synchronous-
+        vs-asynchronous-methods/"> Remote Teaching: When and How to Use Synchronous vs. 
+        Asynchronous Methods
+        </a>
+      </ion-row>
+    </ion-card-content>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Creative Education
+    </ion-card-header>
+    <ion-card-content>
+      “Creativity isn’t just responsible for crayon drawings hanging on refrigerators 
+      and canvases on gallery walls — research suggests that creative individuals tend 
+      to earn more money, live happier lives, and generate more new ideas across all industries”
+   
+
+    <ion-row>
+      <a href="https://www.creativelive.com/blog/creative-education-importance/"> Read More
+      </a>
+    </ion-row>
+  </ion-card-content>
+    <hr>
+
+    <ion-card-content>
+      “Creativity in the classroom goes hand in hand with exceptional student 
+      learning, according to a new Gallup study examining U.S. education. Specifically, 
+      K-12 teachers who frequently make assignments that require students to think 
+      creatively are much more likely than other teachers to observe higher-order 
+      cognitive skills in their students”
+    <ion-row>
+      <a href="https://news.gallup.com/opinion/gallup/245600/teachers-promote-creativity-
+      educational-results.aspx"> Read More
+      </a>
+    </ion-row>
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <h3>
+    Testimonials
+  </h3>
+  <hr>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>“Dr. Goolsby is an exceptional professional. She has facilitated 
+        multiple Professional Development on de-escalation and techniques to support 
+        students in crises. She has effectively created a therapeutic environment where 
+        students are able to take a much needed break to de-escalate and reflect!” 
+        <p>
+        Andrys Perez <br>
+          NYCDOE Paraprofessional
+        </p>
+      </ion-col>
+      <ion-col col-6>“Ms. Goolsby worked with my twin boys at Mosaic Preparatory School. 
+        I have known her for three years and she demonstrated to be hard working and 
+        respectful to my family. She is professional and kind. It is an honor and privilege 
+        to have met her. Her dedication is outstanding.”
+        <p>
+          Mrs. Cavedo<br>
+          Parent
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p>
+    Copyright © 2020 CHOYCES
+  </p>
+  </div>
+
+<style type="text/css">
+  .pane{
+    background:url('../../assets/imgs/background_image.PNG') top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+</style>
+
+<style type="text/css">
+div.center{
+  text-align: center;
+  
+}
+</style>
+</ion-content>
+
+<ion-footer (swipe)="swipeEvent($event)">
+  <ion-navbar color="gold">
+  <ion-buttons start>
+    <h6>
+      Contact Us!
+    </h6>
+
+    <a href="tel:3479166535"><button ion-button icon-only>
+      <ion-icon name="call-outline"></ion-icon>
+    </button></a>
+    
+    <a href="mailto:info@choyces.org"><button ion-button icon-only>
+      <ion-icon name="mail-outline"></ion-icon>
+    </button>
+
+    </a>
+  </ion-buttons>
+  <ion-buttons end>
+    <h6>
+      Follow us!
+    </h6>
+      
+      <a href="https://www.facebook.com/choyces/"><button ion-button icon-only>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button></a>
+      <a href="http://instagram.com/choycesinc"><button ion-button icon-only>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button></a>
+      <a href="http://twitter.com/choycesinc"><button ion-button icon-only>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button></a>
+      <a href="https://www.youtube.com/channel/UC2l5SiGWLrmlckmS4BCvUtQ"><button ion-button icon-only>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </button></a>
+
+  </ion-buttons>  
+</ion-navbar>
+
+</ion-footer>
