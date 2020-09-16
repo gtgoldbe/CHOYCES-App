@@ -19,7 +19,7 @@ To add a new page to main menu:
 1. command: ionic generate page name
 2. in app.component.ts add import statement for page
 
-(import {namePage} from '../pages/name/name';
+(import {namePage} from '../pages/name/name';)
 
    then add page to this.pages dictionary
    
