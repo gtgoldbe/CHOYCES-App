@@ -1,6 +1,16 @@
 # MyIonicProject
 CHOYCES App Prototype
 
+To begin:
+create a new blank ionic project and then download these files into the project.
+Instructions:
+1. ionic start
+2. angular
+3. any name
+4. blank
+5. Y
+
+
 To add a new page to main menu:
 
 //code enclosed in ()
