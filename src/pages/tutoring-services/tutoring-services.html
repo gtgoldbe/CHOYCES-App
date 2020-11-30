@@ -1,0 +1,283 @@
+<!--
+  Generated template for the TutoringServicesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header (swipe)="swipeEvent($event)">
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class = "center">Tutoring Services</ion-title>
+
+    <ion-buttons end>
+        
+      <button ion-button (click)="goHome()">
+        <ion-icon large name="home"></ion-icon>
+      </button>
+
+  </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class = "center">
+  <!-- <button ion-button round color="pink" (click)="goToSignUp()">Schedule A Session</button> -->
+  <button ion-button round color="pink"><a href ="https://choyces.org/tutoring-services/tutoring-sessions-sign-up/">Schedule A Session</a></button>
+  </div>
+
+  <div padding  class = "center pink">
+  <h3  >
+    Academics
+  </h3>
+  
+  
+      <hr>
+      
+   <p >
+    
+    We offer tutoring in all major subjects including Math, English Language Arts, 
+    Reading, Writing, Science and Social studies through K-12.
+   </p>
+   
+   </div>
+   
+  
+  <h3 class = "center " >
+    Test Preparation
+  </h3>
+  <div padding  class = "center pink">
+ <div padding class = "brd  ">
+  <ion-row style="border-bottom: solid;">
+      <ion-col col-4>
+      <ion-label > <h5 style = " text-align : justify ;">SAT<br>Subject</h5></ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-label ><h5 style = " text-align : justify ;">SAT / ACT</h5></ion-label>
+    </ion-col>
+      <ion-col col-4>
+      <ion-label ><h5 style = " text-align : justify ;">PSAT</h5></ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row style="border-bottom: groove;">
+      <ion-col col-4>
+      <p style = " text-align : justify">Services are available to assist students to prepare for individual SAT 
+          subject tests to improve skills in specific subjects. The sessions take 
+          place over the course of 6 hours.</p>
+    </ion-col>
+    <ion-col col-4>
+      <p style = " text-align : justify">With our SAT/ACT programs, we will assist students to prepare for these 
+          exams or to raise their scores in order to help them feel more confident 
+          and prepared for test day. The sessions take place over the course of 19.5 hours.</p>
+    </ion-col>
+      <ion-col col-4>
+      <p style = " text-align : justify">Services are available to assist students with the PSAT, an exam taken 
+          prior to the SAT. Many of the sessions are over the course of 16.5 hours.</p>
+    </ion-col>
+  </ion-row>
+ </div> 
+ </div>
+<!-- <hr>
+  <ion-grid>
+    <ion-row class = "brd  ">
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:cornflowerblue;">
+          SAT Subject
+        </h5>
+        <p >
+          Services are available to assist students to prepare for individual SAT 
+          subject tests to improve skills in specific subjects. The sessions take 
+          place over the course of 6 hours.
+        </p>
+      </ion-col>
+
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:cornflowerblue;">
+          SAT / ACT
+        </h5>
+        <p >
+          With our SAT/ACT programs, we will assist students to prepare for these 
+          exams or to raise their scores in order to help them feel more confident 
+          and prepared for test day. The sessions take place over the course of 19.5 hours.
+        </p>
+      </ion-col>
+
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:cornflowerblue;">
+          PSAT
+        </h5>
+        <p >
+          Services are available to assist students with the PSAT, an exam taken 
+          prior to the SAT. Many of the sessions are over the course of 16.5 hours.
+        </p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid> -->
+  
+  
+  <h3 class = "center">
+    College Readiness
+  </h3>
+<div padding   class = "center pink">
+<div padding class = "brd  ">
+  <ion-row style="border-bottom: solid;">
+      <ion-col col-4>
+      <ion-label > <h5 style = " text-align : justify ;">Application</h5></ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-label ><h5 style = " text-align : justify ;">Mentorship</h5></ion-label>
+    </ion-col>
+      <ion-col col-4>
+      <ion-label ><h5 style = " text-align : justify ;">College <br>Research</h5></ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row style="border-bottom: groove;">
+      <ion-col col-4>
+      <p style = " text-align : justify">We provide assistance with every step of the college application 
+      and essay process to ensure that deadlines are met and are done efficiently and effectively.</p>
+    </ion-col>
+    <ion-col col-4>
+      <p style = " text-align : justify">We guide each student to ensure that they are
+       taking the correct classes in high school, developing important skills, and exploring
+        extracurricular activities/ volunteer opportunities. 
+</p>
+    </ion-col>
+      <ion-col col-4>
+      <p style = " text-align : justify">Finding the correct college for each student is an
+       important, but difficult decision. We provide assistance in finding the one that is
+        the right fit and provides the best opportunities.
+</p>
+    </ion-col>
+  </ion-row>
+ </div> 
+ </div>
+<!-- <hr>
+  <ion-grid>
+    <ion-row class = "brd  ">
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:darkgoldenrod;">
+          Application
+        </h5>
+        <p>
+          We provide assistance with every step of the college application and essay process to ensure that deadlines are met and are done efficiently and effectively.
+        </p>
+      </ion-col>
+
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:darkgoldenrod;">
+          Mentorship
+        </h5>
+        <p>
+          We guide each student to ensure that they are taking the correct classes in high school, developing important skills, and exploring extracurricular activities/ volunteer opportunities. 
+        </p>
+      </ion-col>
+
+      <ion-col col-4> 
+        <h5 style="border:3px; border-style:solid; border-color:darkgoldenrod;">
+          College Research
+        </h5>
+        <p>
+          Finding the correct college for each student is an important, but difficult decision. We provide assistance in finding the one that is the right fit and provides the best opportunities.
+        </p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid> -->
+  <style type="text/css">
+  .pane{
+    background:url('../../assets/imgs/OIP.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat: repeat;
+    background-attachment: local;
+    background-position : center;
+  
+    
+  }
+</style> 
+
+
+
+<style type="text/css">
+div.center{
+  text-align: center;
+  
+}
+.pink{
+  background : #F34B8D;
+  width : 100%;
+   display: block; 
+}
+</style> 
+
+<style type="text/css">
+  .center{
+    text-align: center;
+  }
+  .img{
+    overflow: scroll;
+  }
+
+  .brd{
+  
+    border-radius: 25px;  
+  }
+
+  .col{
+    column-gap: 40px;
+  column-rule: 4px double #ff00ff;
+  }
+   </style>
+  <style type="text/css">
+  .abc{
+    background-color : Green;
+    text-align: center;
+  }
+  .ali{
+    color : white;
+  }
+  </style>
+  
+</ion-content>
+<ion-footer (swipe)="swipeEvent($event)">
+  <ion-navbar color="grey">
+    <ion-buttons start >
+      <h6  class = "ali">
+        Contact Us!
+      </h6>
+  
+      <a href="tel:3479166535"><button ion-button icon-only>
+        <ion-icon name="call-outline"></ion-icon>
+      </button></a>
+  
+      <a href="mailto:info@choyces.org"><button ion-button icon-only>
+        <ion-icon name="mail-outline"></ion-icon>
+      </button>
+  
+      </a>
+    </ion-buttons>
+  <ion-buttons end>
+    <h6 class = "ali">
+      Follow us!
+    </h6>
+      
+      <a href="https://www.facebook.com/choyces/"><button ion-button icon-only>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button></a>
+      <a href="http://instagram.com/choycesinc"><button ion-button icon-only>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button></a>
+      <a href="http://twitter.com/choycesinc"><button ion-button icon-only>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button></a>
+      <a href="https://www.youtube.com/channel/UC2l5SiGWLrmlckmS4BCvUtQ"><button ion-button icon-only>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </button></a>
+
+  </ion-buttons>  
+</ion-navbar>
+
+</ion-footer>
+
