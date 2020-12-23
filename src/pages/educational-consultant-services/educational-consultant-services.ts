@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HomePage} from '../home/home';
+import {WhatSHappeningNowPage} from '../what-s-happening-now/what-s-happening-now';
 import {TutoringServicesPage} from '../tutoring-services/tutoring-services';
-import {OurTeamPage} from '../our-team/our-team';
 
 /**
  * Generated class for the EducationalConsultantServicesPage page.
@@ -30,7 +30,7 @@ export class EducationalConsultantServicesPage {
   
   swipeEvent(e){
     if(e.direction == 2){
-      this.navCtrl.setRoot(OurTeamPage);
+      this.navCtrl.setRoot(WhatSHappeningNowPage);
   }
     else{
       this.navCtrl.setRoot(TutoringServicesPage);

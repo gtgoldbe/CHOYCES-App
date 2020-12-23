@@ -3,15 +3,12 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutUsPage } from '../pages/about-us/about-us';
 import {TutoringServicesPage} from '../pages/tutoring-services/tutoring-services';
 import {EducationalConsultantServicesPage} from '../pages/educational-consultant-services/educational-consultant-services';
-import {TutoringSignUpPage} from '../pages/tutoring-sign-up/tutoring-sign-up';
-import {OurTeamPage} from '../pages/our-team/our-team';
 import {WhatSHappeningNowPage} from '../pages/what-s-happening-now/what-s-happening-now';
 
 
@@ -36,12 +33,9 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'My First List', component: ListPage },
       { title: 'About Us', component: AboutUsPage},
       { title: 'Tutoring Services', component: TutoringServicesPage},
       { title: 'Educational Consultant Services', component: EducationalConsultantServicesPage},
-      { title: 'Tutoring Sign Up', component: TutoringSignUpPage},
-      { title: 'Our Team', component: OurTeamPage},
       { title: 'What\'s Happening Now', component: WhatSHappeningNowPage }
     ];
   }

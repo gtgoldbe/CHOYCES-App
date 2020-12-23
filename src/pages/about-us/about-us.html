@@ -1,170 +1,397 @@
-<!--
-  Generated template for the AboutUsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header (swipe)="swipeEvent($event)"
->
-  <ion-navbar color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>About Us</ion-title>
-
-    <ion-buttons end>
-        
-      <button ion-button (click)="goHome()">
-        <ion-icon large name="home"></ion-icon>
-      </button>
-
-  </ion-buttons>
-
-  </ion-navbar>
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
-
-
-
-<ion-content padding>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col col-6>
-        <img src="../../assets/imgs/cropped-CHOYCES_Logo_Redesign_1-Copy-2.webp" width="80"/>
-      </ion-col>
-      <ion-col col-8>
-        <p>
-          "Creativity is Contagious, Pass It on!" - Albert Einstein
-        </p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content> -->
+<!--<ion-header (swipe)="swipeEvent($event)" class = "header_backgroundcolor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <ion-navbar color="primary">
+    <div class="header">
   
-  <h3>About CHOYCES</h3>
-
-  <p>
-    CHOYCES is a profit organization operating in Rochester, New York 
-    and has expanded across the United States with skillful expertises 
-    since its creation! It is our mission at CHOYCES to help students think 
-    creatively, and to provide individualized tutoring to students based on 
-    what works for them.
-  </p>
-
-
-
-  <ion-card>
-    <img src="../../assets/imgs/danielleWithBackground.png"/>
-    <ion-card-header>
-      <h4> Dr. Danielle S. Goolsby</h4>
-      <!--<ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>-->
-    </ion-card-header>
+        <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img class = "logo" src="../../assets/imgs/CHOYCES_Logo.png" width="80"/>
+          </ion-col>
   
-    <ion-card-content>
-      <hr>
-      <p>
-        Danielle S. Goolsby has always had a love for education. She has experience 
-        tutoring even before she decided to become an educator. Dr. Goolsby is a 
-        native of Rochester, New York. She has a Bachelors in Communication with a 
-        minor in Political Science from the University at Buffalo in Buffalo, NY, a 
-        Masters in Childhood Education from St. John Fisher College in Rochester, NY, 
-        with certifications in both General & Special Education, and completed her 
-        Doctorate in Interdisciplinary Education at LIU, C.W. Post, in Long Island, NY.
-    
-      </p>
-    
-      <p>
-        Danielle has been in the education field for 8 years. She has consistently 
-        demonstrated proficiency in communication, leadership, conflict resolution, 
-        teaching students with disabilities, common core curriculum development, providing 
-        professional development for colleagues, mentorship, and staff development.
-      </p>
-    
-      <p>
-        As a leader and educator, Ms. Goolsby is consistently confronted with opportunities 
-        to provide needed information to her colleagues, students and their families as well 
-        as serve as the go between and liaison for effective communication, pedagogy and education. 
-        She has been a staff developer, teacher leader, IEP teacher, and a part of a school leadership 
-        team for the past 6 years.  During this time, she has had the opportunity to take part in 
-        New York City Quality Review debriefings with administrators and reviewers, create teacher 
-        improvement plans, and provide professional development in Special Education, inclusion, 
-        classroom and behavior management, literacy, best practices for academic success, and new 
-        teacher hires. She has been acknowledged for many things such as academic communication, 
-        leadership, and professional mediation among colleagues. As a fluent Spanish speaker, she 
-        is able to connect and communicate with native Spanish speakers.
-      </p>
-    </ion-card-content>
-  </ion-card>
-
+          <ion-col class="Menu">
+             <div class="menu-sandwich">
+              <button type="button" class="menu-toggle-button" aria-controls="primary-menu" aria-expanded="false" data-index="0">
+                  <span class="screen-reader-text">Main Menu</span>
+                  <span class="menu-toggle-icon"></span>
+              </button> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="Navigation">
+              <ul id = "Navigation_ul">
+                <li class="Home_li">
+                    <a href="https://choyces.org" class="menu-link">Home</a>
+                </li>
+                <li class="AboutUs_li">
+                  <a href="https://choyces.org/about-us/" aria-current="page" class="menu-link">About Us</a>
+                </li>
+                <li class="WhatsHappeningNow_li">
+                  <a href="https://choyces.org/whats-happening-now/" class="menu-link">What’s Happening Now</a>
+                </li>
   
-
+                <li class="Services_li">
+                   <a class="menu-link">
+                    Services
+                  </a> 
   
-
-  <h6>
-    Give your child the tools to succeed by making the right CHOYCES to Creatively Help Our Youth 
-    Conquer Education & Success.
-  </h6>
-
-  <p>
-    We believe education plays a major role in gaining knowledge for the necessary skills you need 
-    to reach your goals. Some benefits of education are being able to give back to communities, 
-    reaching goals and setting standards for your life, as well as setting a good example for others.
-  </p>
-
-  <p>
-    CHOYCES offers tutoring services and manages to provide experience in college readiness. 
-    CHOYCES is all about creativity, thus, it has expanded to offer a variety of dance classes 
-    and private sessions. We also offer test preparation, and educational consultation. CHOYCES 
-    is not limited to the tri-state area, Rochester, or New York State, as it offers virtual 
-    tutoring session using Skype.
-  </p>
-
-  <p>
-    Tutoring consists of homework help, as well as, help with struggling areas identified by a
-    progress report by your child's teacher and/or the online questionnaire. All tutoring consists 
-    of the grade appropriate Common Core Learning Standards.
-  </p>
-  <img src="../../assets/imgs/CHOYCES_Icon_Pencil-Straight.svg" width="1000"
-  height="200"/>
-</ion-content>
-
-<ion-footer (swipe)="swipeEvent($event)">
-  <ion-navbar color="gold">
-    <ion-buttons start>
-      <h6>
-        Contact Us!
-      </h6>
+                  <button class="Services-Dropdown">
+                    Services
+                  </button>
+                  <ul class="Services-Dropdown-content">
+                    <li>
+                      <a href="https://choyces.org/tutoring-services/" class="Dropdown-Tutoring">Tutoring</a>
+                    </li>
+                    <li>
+                      <a href="https://choyces.org/educational-consultant-services/" class="Dropdown-EducationalConsulting">Educational Consulting</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+           </a>
+          </ion-col>
+       <ion-buttons end>
+        <button ion-button (click)="goHome()">
+          <ion-icon large name="home"></ion-icon>
+        </button>
+    </ion-buttons> 
   
-      <a href="tel:3479166535"><button ion-button icon-only>
-        <ion-icon name="call-outline"></ion-icon>
-      </button></a>
+        </ion-row>
+        </ion-grid>
   
-      <a href="mailto:info@choyces.org"><button ion-button icon-only>
-        <ion-icon name="mail-outline"></ion-icon>
+    </div>
+    </ion-navbar>
+  </ion-header> -->
+  <ion-header (swipe)="swipeEvent($event)">
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
       </button>
+      <ion-title class ="center">About Us</ion-title>
   
-      </a>
+      <ion-buttons end>
+          
+        <button ion-button (click)="goHome()">
+          <ion-icon large name="home"></ion-icon>
+        </button>
+  
     </ion-buttons>
-
-  <ion-buttons end>
-    <h6>
-      Follow us!
-    </h6>
-      
-      <a href="https://www.facebook.com/choyces/"><button ion-button icon-only>
-        <ion-icon name="logo-facebook"></ion-icon>
-      </button></a>
-      <a href="http://instagram.com/choycesinc"><button ion-button icon-only>
-        <ion-icon name="logo-instagram"></ion-icon>
-      </button></a>
-      <a href="http://twitter.com/choycesinc"><button ion-button icon-only>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </button></a>
-      <a href="https://www.youtube.com/channel/UC2l5SiGWLrmlckmS4BCvUtQ"><button ion-button icon-only>
-        <ion-icon name="logo-youtube"></ion-icon>
-      </button></a>
-
-  </ion-buttons>  
-</ion-navbar>
-
-</ion-footer>
+    </ion-navbar>
+  </ion-header>
+  <!-- <ion-content padding> -->
+  <!-- <body class = "site"> -->
+  <ion-content class="site">
+  
+  <!-- <body class="site"> -->
+  
+  <section class="BannerImage">
+    <div class="BannerOverlay">
+      <ion-card class = "About-Us_Banner">
+          <p>About Us</p>
+      </ion-card>
+    </div>
+  </section>
+  
+  <section class="Dr_Goolsby">
+    <ion-grid ><!--[fixed] = "true">-->
+    <ion-row>
+  
+    <ion-col size="12" size-sm>
+    <!-- size="12" size-sm> -->
+      <div class = "Dr_Goolsby_Pic">
+        <img src="../../assets/imgs/danielleWithBackground.png"/>
+      </div>
+    </ion-col>
+  
+    <!-- <ion-col> -->
+    <div class="Dr_Goolsby_Header_Text">
+    <ion-col size="12" size-sm>
+      <div class="Dr_Goolsby_Header">
+        <h2 class="dr_goolsby"> Dr. Danielle S. Goolsby</h2>
+      </div>
+    <!-- </ion-col> -->
+  
+          <!-- <ion-col size-sm> -->
+          <!-- <ion-col size="6" size-sm = "6"> -->
+          <div class="Dr_Goolsby_Text">
+            <ion-card class="Dr_GTextWrap">
+              <ion-card-content>
+                <div class="text">
+                    <p>
+                      Danielle S. Goolsby has always had a love for education. She has experience
+                      tutoring even before she decided to become an educator. Dr. Goolsby is a native
+                      of Rochester, New York. She has a Bachelors in Communication with a minor in Political Science
+                      from the University at Buffalo in Buffalo, NY, a Masters in Childhood Education from
+                      St. John Fisher College in Rochester, NY, with certifications in both General &amp;
+                      Special Education, and completed her Doctorate in Interdisciplinary Education at LIU, C.W. Post, in Long Island, NY.
+                    </p>
+  
+                  <div class="text2">
+                    <p>
+                      Danielle has been in the education field for 8 years. She has consistently demonstrated
+                      proficiency in communication, leadership, conflict resolution, teaching students with
+                      disabilities, common core curriculum development, providing professional development for
+                      colleagues, mentorship, and staff development.&nbsp;
+                    </p>
+                  </div>
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </div>
+          </ion-col>
+    </div>
+    <!-- </ion-col> -->
+  </ion-row>
+  </ion-grid>
+  </section>
+  
+  <section class = "OurTeam_Banner">
+      <p >Our Team</p>
+  </section>
+  
+  <!-- <section class="Leads"> -->
+  
+  <section class="Leads_Section">
+    <ion-grid>
+    <ion-row>
+    <div class="Leads">
+      <!-- <ion-card>
+      <ion-card-content> -->
+        <!-- Abuchi Lead -->
+  
+      <div class="Lead_Row">
+      <ion-col size="12" size-sm>
+        <div class="Abuchi">
+          <div class="AbuchiPicture_Header">
+            <!-- <div class="AbuchiPicture"> -->
+            <figure class="elementor-image-box-img">
+              <img width="140" height="140" src="https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped.png?fit=189%2C189&amp;ssl=1" alt="" loading="lazy" srcset="https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped.png?w=189&amp;ssl=1 189w, https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped.png?resize=150%2C150&amp;ssl=1 150w">
+               <!-- sizes="(max-width: 189px) 100vw, 189px"> -->
+            </figure>
+            <!-- </div> -->
+          <!-- <div class="Abuchi_header"> -->
+            <h3 class="Abuchi_header">Abuchi</h3>
+            <p class="Abuchi_subheader">Gaming/App Team</p>
+          <!-- </div> -->
+          </div>
+            <!-- <div class="Abuchi_Bio_Wrap"> -->
+            <div class="Abuchi_Bio">
+                <p>
+                  <span>
+                    Abuchi Oguonu graduated from Rutgers University with a
+                    Bachelors in Information Technology. He currently works
+                    as the lead for the Gaming/App team. Abuchi also has experience
+                    as a Business Intelligence Consultant doing data analytics.&nbsp;
+                  </span>
+                </p>
+            </div>
+          <!-- </div> -->
+          <!-- </div> -->
+        </div>
+        </ion-col>
+      <!-- Aria Lead -->
+      <ion-col size="12" size-sm>
+      <div class="Aria">
+        <div class="AriaPicture_Header">
+          <figure class="elementor-image-box-img">
+            <img width="140" height="140" src="https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped-1.png?fit=138%2C138&amp;ssl=1" alt="" loading="lazy">
+            <!-- class="elementor-animation-grow attachment-full size-full" / this is this is the class for the picture on the CHOYCES website-->
+          </figure>
+          <!-- <div class="Aria_header"> -->
+            <h3 class="Aria_header">Aria</h3>
+            <p class="Aria_subheader">recruitment TEAM</p>
+          <!-- </div> -->
+        </div>
+            <div class="Aria_Bio">
+              <div>
+                <p>
+                  <span>
+                    Aria is a junior at Rutgers University majoring in management
+                    and minoring in psychology. Aria is the current lead for the
+                    recruitment department. She knew CHOYCES&nbsp; was something
+                    she wanted to be a part of right from its inception.
+                  </span>
+                </p>
+              </div>
+            </div>
+        </div>
+        </ion-col>
+      <!-- Aldin Lead -->
+      <ion-col size="12" size-sm>
+      <div class="Aldin">
+        <div class="AldinPicture_Header">
+          <figure class="elementor-image-box-img">
+            <img width="140" height="140" src="https://i0.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped-3.png?fit=257%2C257&amp;ssl=1" alt="" loading="lazy" srcset="https://i0.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped-3.png?w=257&amp;ssl=1 257w, https://i0.wp.com/choyces.org/wp-content/uploads/2020/10/circle-cropped-3.png?resize=150%2C150&amp;ssl=1 150w">
+            <!-- sizes="(max-width: 257px) 100vw, 257px"> -->
+            <!-- class="elementor-animation-grow attachment-full size-full" / this is this is the class for the picture on the CHOYCES website-->
+          </figure>
+  
+            <h3 class="Aldin_header">Aldin</h3>
+            <p class="Aldin_subheader">GRAPHIC DESIGN</p>
+          </div>
+          <div class="Aldin_Bio">
+            <div>
+              <p>
+                <span>
+                    Aldin is a graduate of Nassau Community College with an
+                    Associate’s degree in Commercial Arts: Digital Technologies.
+                    Aldin has several years of experience in Graphic Design and was
+                    also an intern before taking on the lead.
+                </span>
+              </p>
+            </div>
+          </div>
+      </div>
+      </ion-col>
+      <!-- </section> -->
+      </div>
+      <!-- </ion-card-content>
+      </ion-card> -->
+    </div>
+  </ion-row>
+  </ion-grid>
+  </section>
+  
+  
+  <section>
+    <div class = "OurServices_Banner">
+      <p>Our Services</p>
+      <p class="Enroll">ENROLL TODAY!</p>
+    </div>
+  </section>
+  
+  <section class="Services">
+    <ion-grid>
+    <ion-row>
+  
+    <div>
+      <div>
+        <ion-col size = "6" size-sm="12">
+  
+        <ion-card class="OnlineTutoring">
+        <ion-card-content>
+          <div>
+            <div class="OnlineTutoringImage">
+              <!-- width="448" height="298" -->
+              <img src="https://i1.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-august-de-richelieu-4260479.jpg?fit=1280%2C854&amp;ssl=1" alt="" loading="lazy" srcset="https://i1.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-august-de-richelieu-4260479.jpg?w=1280&amp;ssl=1 1280w, https://i1.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-august-de-richelieu-4260479.jpg?resize=300%2C200&amp;ssl=1 300w, https://i1.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-august-de-richelieu-4260479.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i1.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-august-de-richelieu-4260479.jpg?resize=768%2C512&amp;ssl=1 768w" sizes="(max-width: 1200px) 100vw, 1200px">
+              <!-- class="attachment-full size-full" -->
+            </div>
+            <div >
+              <!-- class="OnlineTutoringTextHeader"> -->
+              <p class="OnlineTutoringTextHeader">Online Tutoring</p>
+            </div>
+            <div>
+              <p class="OnlineTutoringText">
+                CHOYCES Online tutoring services for students
+                in grade K-12&nbsp; to help enrich student’s
+                education&nbsp;outside of school
+              </p>
+            </div>
+  
+            <div class="OnlineTutoringLearnMoreButtonWrap">
+              <a href="" class="OnlineTutoringLearnMoreButton" role="button">
+                  <span class="OnlineTutoringLearnMore">Learn More </span>
+              </a>
+            </div>
+          </div>
+          </ion-card-content>
+          </ion-card>
+  
+          </ion-col>
+  
+          <ion-col size = "6" size-sm="12">
+          <ion-card class="EducationalConsulting">
+          <ion-card-content>
+            <div>
+              <div class="EducationalConsultingImage">
+                <!-- width="448" height="298" -->
+                <img src="https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-anna-shvets-4226256-min.jpg?fit=1280%2C853&amp;ssl=1" alt="" loading="lazy" srcset="https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-anna-shvets-4226256-min.jpg?w=1280&amp;ssl=1 1280w, https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-anna-shvets-4226256-min.jpg?resize=300%2C200&amp;ssl=1 300w, https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-anna-shvets-4226256-min.jpg?resize=1024%2C682&amp;ssl=1 1024w, https://i2.wp.com/choyces.org/wp-content/uploads/2020/10/pexels-anna-shvets-4226256-min.jpg?resize=768%2C512&amp;ssl=1 768w" sizes="(max-width: 1200px) 100vw, 1200px">
+                <!-- class="attachment-full size-full" -->
+              </div>
+              <div>
+                <h3 class="EducationalConsultingTextHeader">Educational Consulting</h3>
+              </div>
+              <div>
+                <p class="EducationalConsultingText">
+                  Education consultations to provide students
+                  with academic advice and guide them to their
+                  fullest potential
+                </p>
+              </div>
+  
+              <div class="EducationalConsultingLearnMoreButtonWrap">
+                <a href="" class="EducationalConsultingLearnMoreButton" role="button">
+                    <span class="EducationalConsultingLearnMore">Learn More </span>
+                </a>
+              </div>
+  
+            </div>
+            </ion-card-content>
+            </ion-card>
+            </ion-col>
+      </div>
+    </div>
+    </ion-row>
+    </ion-grid>
+  </section>
+  <!-- </body> -->
+  </ion-content>
+  
+  <ion-footer (swipe)="swipeEvent($event)">
+    <ion-navbar color="grey">
+      <ion-buttons start>
+        <h6>
+          Contact Us!
+        </h6>
+    
+        <a href="tel:3479166535"><button ion-button icon-only>
+          <ion-icon name="call-outline"></ion-icon>
+        </button></a>
+    
+        <a href="mailto:info@choyces.org"><button ion-button icon-only>
+          <ion-icon name="mail-outline"></ion-icon>
+        </button>
+    
+        </a>
+      </ion-buttons>
+    <ion-buttons end>
+      <h6>
+        Follow us!
+      </h6>
+        
+        <a href="https://www.facebook.com/choyces/"><button ion-button icon-only>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button></a>
+        <a href="http://instagram.com/choycesinc"><button ion-button icon-only>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </button></a>
+        <a href="http://twitter.com/choycesinc"><button ion-button icon-only>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button></a>
+        <a href="https://www.youtube.com/channel/UC2l5SiGWLrmlckmS4BCvUtQ"><button ion-button icon-only>
+          <ion-icon name="logo-youtube"></ion-icon>
+        </button></a>
+  
+    </ion-buttons>  
+  </ion-navbar>
+  
+  </ion-footer>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HomePage} from '../home/home';
-import {OurTeamPage} from '../our-team/our-team';
+import {EducationalConsultantServicesPage} from '../educational-consultant-services/educational-consultant-services';
 
 /**
  * Generated class for the WhatSHappeningNowPage page.
@@ -32,7 +32,7 @@ export class WhatSHappeningNowPage {
       this.navCtrl.setRoot(HomePage);
   }
     else{
-      this.navCtrl.setRoot(OurTeamPage);
+      this.navCtrl.setRoot(EducationalConsultantServicesPage);
     }
   }
 

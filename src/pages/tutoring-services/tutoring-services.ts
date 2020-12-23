@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {TutoringSignUpPage} from '../tutoring-sign-up/tutoring-sign-up';
 import {HomePage} from '../home/home';
 import {AboutUsPage} from '../about-us/about-us';
 import {EducationalConsultantServicesPage} from '../educational-consultant-services/educational-consultant-services';
@@ -27,7 +26,7 @@ export class TutoringServicesPage {
   }
 
   goToSignUp(){
-    this.navCtrl.setRoot(TutoringSignUpPage);
+    //this.navCtrl.setRoot();
   }
   goHome(){
     this.navCtrl.setRoot(HomePage);

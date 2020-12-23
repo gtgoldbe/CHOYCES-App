@@ -19,7 +19,7 @@
 
   </ion-navbar>
 </ion-header>
-<ion-content  padding  class="pane">
+<ion-content (swipe)="swipeEvent($event)" padding>
   <div class="center">
 
   <h3>
@@ -27,53 +27,74 @@
   </h3>
  
     <hr>
-
-  <h3>
-    CHOYCES Summer Dance Academy Final Performance
-  </h3>
-
-  <p>
-    <!--<object height="350" width="425">
-<param name="movie" value="https://www.youtube.com/v/R3ymHMgFAps">
-<param name="wmode" value="transparent">
-<embed height="350" src="https://www.youtube.com/v/R3ymHMgFAps?rel=0" type="application/x-shockwave-flash" width="425" wmode="transparent">
-</object>-->
-<iframe width="315" height="315" src="https://www.youtube.com/embed/wGL4LkB0Igw" 
-frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-picture-in-picture" allowfullscreen></iframe>
-  </p>
-
-  <h3>
-    Educational Consulting
-  </h3>
-
-  <p>
-    CHOYCES offers education consultations to provide students with advice regarding 
-    their academics and guide them to their fullest potential.
-  </p>
-  <button ion-button small color="primary" (click)="goToConsulting()">Learn More</button>
-
-
-<h3>
-  Tutoring Services
-</h3>
-<p>
-  CHOYCES offers online tutoring services for students in grade K-12  to help enrich 
-  student’s education outside of school.
+<p style="margin: 0;padding: 0;">
+  <button ion-button light small color="blue" (click)="goToTutoring()">Schedule a Tutoring Session</button>
+  <br>    
+  <button ion-button light small color="pink" (click)="goToConsulting()">Request a Free Consultation</button>
 </p>
+    
+
+
   <p>
-    <button ion-button small color="primary" (click)="goToTutoring()">Learn More</button>
+
+<iframe width="315" height="315" src="https://www.youtube.com/embed/FKk710flvjM" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   </p>
 
-  <a href="https://choyces.org/sponsor/"><button ion-button small color="gold">Donate 
+  <h2>
+    What We Offer
+  </h2>
+</div>
+  <ion-card>
+    <ion-card-header>
+      <div class="center">
+      Online Tutoring
+    </div>
+    </ion-card-header>
+    <img src="../../assets/imgs/girl_smile.jpg"/>
+  <ion-card-content>
+    Online tutoring services for students in grade K-12  to help enrich student’s education outside of school.
+  </ion-card-content>
+  <div class="center">
+  <button ion-button light small color="blue" (click)="goToTutoring()">Learn More</button>
+  </div>
+  </ion-card>
+<br>
+<br>
+  <ion-card>
+    <ion-card-header>
+      <div class="center">
+      Educational Consulting
+      </div>
+    </ion-card-header>
+    <img src="../../assets/imgs/men_planning.jpg"/>
+  <ion-card-content>
+    Educational consultations are provided to educators around a variety of topics that will ultimately help our youth conquer education and success. 
+   </ion-card-content>
+   <div class="center">
+   <button ion-button light small color="blue" (click)="goToConsulting()">Learn More</button>
+   </div>
+
+  </ion-card>
+
+
+
+
+
+  <h2>
+    <div class="center">
+    Consider Sponsoring Us
+  </div>
+  </h2>
+  <p>
+    Every donation is a step towards helping us in many ways. We will be able to provide children with the tools they need to develop their creative gift and become the young change agents we know they can be. CHOYCES greatly appreciates your help in achieving our goal to Creatively Help Our Youth Conquer Education and Success.
+  </p>
+  <div class="center">
+  <a href="https://choyces.org/sponsor/"><button ion-button small color="pink">Donate 
     / Sponsor</button></a>
-
-
-  <h3>
-    In The News
-  </h3>
-  <hr>
-
+</div>
   <ion-card>
     <ion-card-header>
       Benefits of Tutoring
@@ -154,7 +175,9 @@ picture-in-picture" allowfullscreen></iframe>
 
 
   <h3>
+    <div class="center">
     Testimonials
+  </div>
   </h3>
   <hr>
 
@@ -181,17 +204,17 @@ picture-in-picture" allowfullscreen></iframe>
     </ion-row>
   </ion-grid>
 
-  <p>
+    <div class="center">
     Copyright © 2020 CHOYCES
-  </p>
-  </div>
+    </div>
+
 
 <style type="text/css">
   .pane{
     background:url('../../assets/imgs/background_image.PNG') top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: scroll;
   }
 </style>
 
@@ -201,10 +224,24 @@ div.center{
   
 }
 </style>
-</ion-content>
 
+<style type="text/css">
+div.left{
+  text-align:left;
+}
+  
+</style>
+
+<style type="text/css">
+div.right{
+  text-align: right;
+}
+</style>
+
+
+</ion-content>
 <ion-footer (swipe)="swipeEvent($event)">
-  <ion-navbar color="gold">
+  <ion-navbar color="grey">
   <ion-buttons start>
     <h6>
       Contact Us!

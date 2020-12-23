@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { AboutUsPage } from './about-us';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { FormsModule } from '@angular/forms';
+import { AboutUsPage } from './about-us.page';
+
+import { AboutUsPageRoutingModule } from './about-us-routing.module';
+
 
 @NgModule({
-  declarations: [
-    AboutUsPage,
-  ],
   imports: [
-    IonicPageModule.forChild(AboutUsPage),
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    AboutUsPageRoutingModule
   ],
+  declarations: [AboutUsPage]
 })
 export class AboutUsPageModule {}
